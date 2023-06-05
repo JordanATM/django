@@ -21,4 +21,7 @@ from Proyecto1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', views.saludo),
+    path('despedida/', views.despedida),
+    path('fecha/', views.dame_fecha),
+    path('edades/<int:edad>/<int:agno>', views.calcula_edad),
 ]
