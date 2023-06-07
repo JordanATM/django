@@ -7,8 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    {% include "superior/barra.html" %}
+
+
     <h1>Hola mundo, esta es la primera plantilla con Django</h1>
     <h2>Mi nombre es: {{nombre_persona}} {{apellido_persona}} </h2>
     <p>La fecha actual es {{fecha.day}}/{{fecha.month}}/{{fecha.year}}</p>
+    
+    <p><strong>Temas del curso:</strong></p>
+       <ul>
+            {% if temas %}
+                {% for tema in temas %}
+                    <li>{{tema}}</li>
+                {% endfor %}
+            {% else %}
+                <p>No hay elementos que mostrar</p>
+            {% endif %}
+        </ul>
+
+
+
 </body>
 </html>
