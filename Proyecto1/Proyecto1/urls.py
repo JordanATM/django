@@ -24,4 +24,6 @@ urlpatterns = [
     path('despedida/', views.despedida),
     path('fecha/', views.dame_fecha),
     path('edades/<int:edad>/<int:agno>', views.calcula_edad),
+    path('cursoC/', views.cursoC),
+    path('cursoCss/', views.cursoCss),
 ]
