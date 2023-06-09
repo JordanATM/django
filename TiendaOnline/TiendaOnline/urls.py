@@ -24,4 +24,5 @@ urlpatterns = [
     path('buscar/', views.buscar),
     path('contacto/', views.contacto),
     path('gracias/', views.contacto),
+    path('formulario_contacto/', views.contacto),
 ]
